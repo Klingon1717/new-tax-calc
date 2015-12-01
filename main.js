@@ -11,8 +11,10 @@ var wiTotal = Math.round(sub * 1.055 * 100)/100;
 
 
 
+
+
 if(state === 'wi'){
-	console.log(sub);
-	console.log(tax);
-	console.log(wiTotal);
+	console.log(sub,tax,wiTotal);
+	
+	
 }
