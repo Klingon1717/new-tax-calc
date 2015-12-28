@@ -1,11 +1,12 @@
 
 var bill = prompt('What is your bill');
 var state = prompt('What state is this all going down in');
-var sub = Math.round(bill * 100)/100;
+var string = state.toLowerCase();
+var sub = Math.round(bill);
 console.log(sub);
-var tax =  '\.' + 55;
-var stateTax= Math.round(sub * tax *100)/100;
-var wiTotal = Math.round(sub * 1.055 * 100)/100;
+var tax = 3.52
+var stateTax= Math.round(sub + tax);
+var ans= 'subtotal:'+sub+'tax:'+tax+'total:'+stateTax;
 
 
 
@@ -13,8 +14,8 @@ var wiTotal = Math.round(sub * 1.055 * 100)/100;
 
 
 
-if(state === 'wi'){
-	console.log(sub,tax,wiTotal);
+if(string === 'wi'){
+	console.log(ans);
 	
 	
 }
